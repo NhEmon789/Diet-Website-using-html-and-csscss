@@ -1,0 +1,699 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+:root {
+ --main-color: #29d978;
+ --primary: #f0fff7;
+ --black: #141414;
+ --white: #fff;
+ --bg: #f2f2f2;
+ --light-black: #666;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--white);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+}
+
+section {
+    padding: 3rem 9%;
+}
+
+.heading {
+    text-align: center;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    border: 0.1rem solid var(--main-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+.btn:hover {
+    background: var(--main-color);
+    color: var(--white);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: var(--primary);
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color: var(--main-color);
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color: var(--black);
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+}
+
+#menu {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--main-color);
+    display: none;
+}
+
+.home {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(images/home.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.45); /* Adjust the opacity as needed */
+    z-index: 1;
+}
+
+.home .content {
+    position: relative;
+    max-width: 60rem;
+    text-align: center;
+    z-index: 2;
+}
+
+.home .content h3 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: var(--white);
+    padding-bottom: 3.5rem;
+}
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about .row .content {
+    flex: 1 1 40rem;
+    order: 1; /* Ensures the content is first */
+}
+
+.about .row .image {
+    flex: 1 1 40rem;
+    order: 2; /* Ensures the image is second */
+    text-align: right; /* Aligns the image to the right */
+}
+
+.about .row .image img {
+    width: 100%;
+    max-width: 400px; /* Optional: Adjust the max-width as needed */
+    display: inline-block;
+}
+
+.about .row .content h3 {
+    font-size: 3.5rem;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.about .row .content p {
+    font-size: 1.6rem;
+    color: var(--light-black);
+    padding: 2rem 0;
+    line-height: 2;
+}
+
+.services {
+    background: var(--bg);
+}
+
+.services .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    margin-top: 8rem;
+}
+
+.services .box-container .box {
+    text-align: center;
+    padding: 3rem;
+    background: var(--white);
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    margin-bottom: 8rem;
+}
+
+.services .box-container .box:hover,
+.services .box-container .box:hover .icon {
+    background: var(--primary);
+}
+
+.services .box-container .box .icon {
+    width: 13rem;
+    height: 13rem;
+    line-height: 13rem;
+    background: var(--white);
+    border-radius: 50%;
+    margin: -11rem auto 2rem;
+    border: 1.8rem solid var(--bg);
+}
+
+.services .box-container .box .icon img {
+    width: 5rem;
+    margin-top: 2rem;
+}
+
+.services .box-container .box .content h3 {
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: var(--main-color);
+}
+
+.services .box-container .box .content .line {
+    background: var(--main-color);
+    width: 30%;
+    height: 0.4rem;
+    margin: 2rem auto;
+    border-radius: 5rem;
+}
+
+.services .box-container .box .content p {
+    font-size: 1.4rem;
+    color: var(--black);
+    line-height: 2;
+}
+
+.services .box-container .box .content ul {
+    margin: 2rem 0;
+    list-style: none;
+}
+
+.services .box-container .box .content ul li {
+    padding: .5rem;
+    font-size: 1.4rem;
+    color: var(--black);
+}
+
+.services .box-container .box .content ul li i {
+    font-size: 1.4rem;
+    color: var(--white);
+    padding: .5rem;
+    margin-right: 1rem;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+
+.diet {
+    background: var(--bg);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+/* CSS for diet section controls */
+.diet .controls {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px; /* Adjust the bottom margin if needed */
+}
+
+.diet .controls .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px; /* Adjust padding for larger clickable area */
+    margin: 10px;
+    transition: transform 0.3s; /* Add a transition effect */
+}
+
+.diet .controls .buttons img {
+    width: 80px; /* Increase image size */
+    height: 60px; /* Increase image size */
+    object-fit: cover;
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.diet .controls .buttons h3 {
+    font-size: 1.2rem; /* Increase font size */
+}
+
+.diet .controls .buttons:hover {
+    transform: scale(1.1); /* Add a hover effect to enlarge */
+}
+
+
+
+
+.diet .image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.diet .image-container .box {
+    background: var(--white);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    overflow: hidden;
+    transition: .2s linear;
+}
+
+.diet .image-container .box:hover {
+    transform: translateY(-1rem);
+}
+
+.diet .image-container .box .image img {
+    width: 100%;
+}
+
+.diet .image-container .box .content {
+    padding: 1rem 1.5rem;
+}
+
+.diet .image-container .box .content .link {
+    font-size: 1.8rem;
+    color: var(--main-color);
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.diet .image-container .box .content p {
+    font-size: 1.4rem;
+    color: var(--light-black);
+    line-height: 2;
+}
+
+.diet .image-container .box .content .icon a {
+    font-size: 1.2rem;
+    color: var(--light-black);
+    margin-right: 1rem;
+}
+.diet .controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.diet .controls .buttons {
+    background: var(--white);
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    margin: 0 .5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    transition: .2s linear;
+}
+
+.diet .controls .buttons img {
+    width: 3rem;
+    margin-right: .5rem;
+}
+
+.diet .controls .buttons h3 {
+    display: inline-block;
+    margin: 0;
+}
+
+.diet .controls .buttons:hover {
+    background: var(--main-color);
+    color: var(--white);
+}
+
+.diet .image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.diet .image-container .box {
+    background: var(--white);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    overflow: hidden;
+    transition: .2s linear;
+}
+
+.diet .image-container .box:hover {
+    transform: translateY(-1rem);
+}
+
+/* CSS for diet section images */
+.diet .image-container .box .image img {
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the entire area without distortion */
+}
+
+.diet .image-container .box .content {
+    padding: 1rem 1.5rem;
+}
+
+.diet .image-container .box .content .link {
+    font-size: 1.8rem;
+    color: var(--main-color);
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.diet .image-container .box .content p {
+    font-size: 1.4rem;
+    color: var(--light-black);
+    line-height: 2;
+}
+
+.diet .image-container .box .content .icon a {
+    font-size: 1.2rem;
+    color: var(--light-black);
+    margin-right: 1rem;
+}
+
+
+
+
+.pricing {
+    background: var(--bg);
+    padding: 3rem 9%;
+    text-align: center;
+}
+
+.pricing .heading {
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+.pricing .plan-container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+.pricing .plan {
+    max-width: 35rem;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    background: var(--white);
+    transition: transform 0.3s ease;
+}
+
+.pricing .plan:hover {
+    transform: translateY(-0.5rem);
+}
+
+.pricing .plan h3 {
+    color: var(--main-color);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.pricing .plan p {
+    color: var(--black);
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.pricing .plan .price {
+    color: var(--main-color);
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.pricing .plan ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.pricing .plan ul li {
+    color: var(--light-black);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.pricing .plan .btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background: var(--main-color);
+    color: var(--white);
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    transition: background 0.3s ease;
+    text-decoration: none;
+}
+
+.pricing .plan .btn:hover {
+    background: darken(var(--main-color), 10%);
+}
+
+.review {
+    background: #f9f9f9;
+    padding: 60px 0;
+}
+
+.review .heading {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--main-color);
+}
+
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjust the gap value as needed */
+    margin-bottom: 40px; /* Adjust the margin as needed */
+}
+.review-box {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.review-content {
+    margin-bottom: 20px;
+}
+
+.review-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color:var(--black);
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+}
+
+.review-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.review-author h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: var(--black);
+}
+
+.review-author p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+
+
+.heading {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    color:var(--main-color);
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.contact-info, .contact-form {
+    flex: 1 1 45%;
+    background: #fff;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-info .info-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info .info-box i {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: var(--main-color);
+}
+
+.contact-info .info-content h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color:var(--main-color);
+}
+
+.contact-info .info-content p {
+    margin: 0.2rem 0;
+    color: #666;
+}
+
+.contact-form h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: var(--main-color);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-form form button {
+    padding: 1rem;
+    background: var(--main-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.contact-form form button:hover {
+    background: #575757;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .contact-form {
+        flex: 1 1 100%;
+        max-width: 500px;
+    }
+}
+

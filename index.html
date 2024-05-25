@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Diet Website</title>
+    <!-- Font Awesome CSS link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#index" class="logo">diet</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#services">services</a>
+            <a href="#diet">diet</a>
+            <a href="#pricing">pricing</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <div id="menu" class="menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>welcome to the place full of healthy food</h3>
+            <a href="#" class="btn">read more</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="heading">about us</h1>
+        <div class="row">
+            <div class="content">
+                <h3>My Mission Is to Give You a Guideline for Your Health</h3>
+                <p style="text-align: justify; font-size: 1.2rem;">
+                  We want to help you reach your health goals, the healthy way! Our team of registered dietitians and nutrition experts are here to guide you. We know everyone's journey is different, so we create personalized plans that fit your needs and lifestyle. We don't believe in crazy diets or quick fixes. We focus on healthy habits you can keep up for the long run. We'll give you the knowledge and tools to make smart choices about what you eat, so you can feel your best, whether you want to lose weight, manage a health condition, or just have more energy. We're with you every step of the way, with delicious recipes, helpful articles, and easy-to-use tools to keep you motivated. Join us and discover a healthier, happier you!
+                </p>
+                <a href="#" class="btn">read more</a>
+            </div>
+            <div class="image">
+                <img src="images/about.jpg" alt="About us">
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h1 class="heading">our services</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="icon">
+                    <img src="images/service-1.jpg" alt="Service 1">
+                </div>
+                <div class="content">
+                    <h3>Personalized Meal Plans</h3>
+                    <div class="line"></div>
+                    <p>Our personalized meal plans are tailored to meet your unique dietary needs, preferences, and goals. Whether you're looking to lose weight, gain muscle, manage a medical condition, or simply eat healthier, our nutrition experts will create a plan that fits your lifestyle.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Tailored to individual dietary needs, preferences, and goals</li>
+                        <li><i class="fas fa-check"></i>Designed for weight loss, muscle gain, medical condition management, or general health</li>
+                        <li><i class="fas fa-check"></i>Created by professional nutrition experts</li>
+                        <li><i class="fas fa-check"></i>Regular updates and adjustments based on progress and feedback</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <img src="images/service-2.png" alt="Service 2">
+                </div>
+                <div class="content">
+                    <h3>Nutritional Counseling</h3>
+                    <div class="line"></div>
+                    <p>Our team of registered dietitians provides one-on-one nutritional counseling to help you understand your dietary needs and make informed food choices. We offer guidance on portion control, food labels, and healthy eating habits to ensure long-term success.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>One-on-one sessions with registered dietitians</li>
+                        <li><i class="fas fa-check"></i>Comprehensive assessment of dietary habits and lifestyle</li>
+                        <li><i class="fas fa-check"></i>Personalized guidance on portion control, food labels, and healthy eating habits</li>
+                        <li><i class="fas fa-check"></i>Support for developing and maintaining long-term healthy eating behaviors</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <img src="images/service-3.jpg" alt="Service 3">
+                </div>
+                <div class="content">
+                    <h3>Specialized Diet Plans</h3>
+                    <div class="line"></div>
+                    <p>We offer specialized diet plans for various health conditions, including diabetes, heart disease, gastrointestinal disorders, and more. Our plans are designed to manage symptoms, improve health outcomes, and enhance quality of life.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Plans designed for managing diabetes, heart disease, gastrointestinal disorders, and more</li>
+                        <li><i class="fas fa-check"></i>Focus on improving health outcomes and enhancing quality of life</li>
+                        <li><i class="fas fa-check"></i>Symptom management through tailored nutritional approaches</li>
+                        <li><i class="fas fa-check"></i>Ongoing support and adjustments based on individual health needs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="diet" id="diet">
+      <h1 class="heading">Diet Plan</h1>
+      <ul class="controls">
+          <li class="buttons" data-filter="all">
+              <img src="images/diet-1.png" alt="">
+              <h3>All</h3>
+          </li>
+          <li class="buttons" data-filter="breakfast">
+              <img src="images/diet-2.png" alt="">
+              <h3>Breakfast</h3>
+          </li>
+          <li class="buttons" data-filter="lunch">
+              <img src="images/diet-3.png" alt="">
+              <h3>Lunch</h3>
+          </li>
+          <li class="buttons" data-filter="dinner">
+              <img src="images/diet-4.png" alt="">
+              <h3>Dinner</h3>
+          </li>
+      </ul>
+      <div class="image-container">
+          <div class="box">
+              <div class="image">
+                  <img src="images/diet_blog1.jpg" alt="">
+              </div>
+              <div class="content">
+                  <a href="#" class="link">Chicken Peek</a>
+                  <p>Chicken,Vegetables</p>
+                  <div class="icon">
+                      <a href="#"><i class="fas fa-calendar large-icon"></i>24 May, 2024</a>
+                      <a href="#"><i class="fas fa-user large-icon"></i>by admin</a>
+                  </div>
+              </div>
+          </div>
+          <div class="box">
+              <div class="image">
+                  <img src="images/diet_blog2.jpg" alt="">
+              </div>
+              <div class="content">
+                  <a href="#" class="link">Healthy Vegetarian Platter</a>
+                  <p>Tomato,Peas,Letuce,Nuts</p>
+                  <div class="icon">
+                      <a href="#"><i class="fas fa-calendar large-icon"></i>24 May, 2024</a>
+                      <a href="#"><i class="fas fa-user large-icon"></i>by admin</a>
+                  </div>
+              </div>
+          </div>
+          <div class="box">
+              <div class="image">
+                  <img src="images/diet_blog3.jpg" alt="">
+              </div>
+              <div class="content">
+                  <a href="#" class="link">Egg Vegetable Salad</a>
+                  <p>Egg,Tomato,Corn,Peas</p>
+                  <div class="icon">
+                      <a href="#"><i class="fas fa-calendar large-icon"></i>24 May, 2024</a>
+                      <a href="#"><i class="fas fa-user large-icon"></i>by admin</a>
+                  </div>
+              </div>
+          </div>
+          <div class="box">
+              <div class="image">
+                  <img src="images/diet_blog4.jpg" alt="">
+              </div>
+              <div class="content">
+                  <a href="#" class="link">Salmon Fry</a>
+                  <p>Salmon,Vegetables</p>
+                  <div class="icon">
+                      <a href="#"><i class="fas fa-calendar large-icon"></i>24 May, 2024</a>
+                      <a href="#"><i class="fas fa-user large-icon"></i>by admin</a>
+                  </div>
+              </div>
+          </div>
+          <div class="box">
+              <div class="image">
+                  <img src="images/diet_blog5.jpg" alt="">
+              </div>
+              <div class="content">
+                  <a href="#" class="link">Chicken Role with Omelette</a>
+                  <p>Chicken,Egg,Vegetable</p>
+                  <div class="icon">
+                      <a href="#"><i class="fas fa-calendar large-icon"></i>24 May, 2024</a>
+                      <a href="#"><i class="fas fa-user large-icon"></i>by admin</a>
+                  </div>
+              </div>
+          </div>
+          <div class="box">
+              <div class="image">
+                  <img src="images/diet_blog6.jpg" alt="">
+              </div>
+              <div class="content">
+                  <a href="#" class="link">Vegetable Salad</a>
+                  <p>Tomato,Corn,Peas,Broccolli,Cucumber</p>
+                  <div class="icon">
+                      <a href="#"><i class="fas fa-calendar large-icon"></i>24 May, 2024</a>
+                      <a href="#"><i class="fas fa-user large-icon"></i>by admin</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+    <section class="pricing" id="pricing">
+        <h1 class="heading">Our Pricing Plans</h1>
+        <div class="plan-container">
+            <div class="plan">
+                <h3>Basic Plan</h3>
+                <p>Get started with our basic plan.</p>
+                <div class="price">399TK/month</div>
+                <ul>
+                    <li>Personalized meal plans</li>
+                    <li>Nutritional counseling sessions</li>
+                    <li>Weekly progress tracking</li>
+                    <li>Email support</li>
+                </ul>
+                <a href="#" class="btn">Choose Plan</a>
+            </div>
+            <div class="plan">
+                <h3>Standard Plan</h3>
+                <p>Upgrade to our standard plan for more features.</p>
+                <div class="price">699TK/month</div>
+                <ul>
+                    <li>Everything in Basic Plan</li>
+                    <li>Specialized diet plans</li>
+                    <li>Phone support</li>
+                    <li>Monthly progress reviews</li>
+                </ul>
+                <a href="#" class="btn">Choose Plan</a>
+            </div>
+            <div class="plan">
+                <h3>Premium Plan</h3>
+                <p>Our premium plan offers the most comprehensive features.</p>
+                <div class="price">999TK/month</div>
+                <ul>
+                    <li>Everything in Standard Plan</li>
+                    <li>24/7 dedicated support</li>
+                    <li>Access to exclusive recipes</li>
+                    <li>Personalized coaching</li>
+                </ul>
+                <a href="#" class="btn">Choose Plan</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="review" id="review">
+        <h1 class="heading">Customer Reviews</h1>
+        <div class="review-container">
+            <div class="review-box">
+                <div class="review-content">
+                    <p>"One of the standout features is the personalized meal plan generator. After inputting my dietary preferences, goals, and restrictions, I received a tailored meal plan that was easy to follow and included a diverse range of foods."</p>
+                </div>
+                <div class="review-author">
+                    <img src="images/user1.jpg" alt="User 1">
+                    <div class="author-info">
+                        <h4>Rima Akter</h4>
+                        <p>Happy Customer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="review-box">
+                <div class="review-content">
+                    <p>"The website is packed with articles, videos, and guides on various nutrition topics. I've learned so much about macronutrients, vitamins, and effective dieting strategies, all of which have been instrumental in my weight loss journey."</p>
+                </div>
+                <div class="review-author">
+                    <img src="images/user3.jpg" alt="User 2">
+                    <div class="author-info">
+                        <h4>Ariful Hasan</h4>
+                        <p>Thankful Customer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="review-box">
+              <div class="review-content">
+                  <p>"The recipe database is impressive, with thousands of healthy and delicious options. Each recipe includes detailed nutritional information, step-by-step instructions, and user reviews, which makes it easy to find and try new dishes."</p>
+              </div>
+              <div class="review-author">
+                  <img src="images/user2.jpg" alt="User 2">
+                  <div class="author-info">
+                      <h4>Emon</h4>
+                      <p>Satisfied Customer</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1 class="heading">Contact Us</h1>
+        <div class="contact-container">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <div class="info-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="info-content">
+                        <h3>Address</h3>
+                        <p>Mirpur-2, Dhaka, Bangladesh</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-envelope"></i>
+                    <div class="info-content">
+                        <h3>Email</h3>
+                        <p>emon15-5847@diu.edu.bd</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="info-content">
+                        <h3>Phone</h3>
+                        <p>+8801743374027</p>
+                    </div>
+                </div>
+               
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Send us a message</h2>
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+                <!-- Login Section -->
+                <div class="login-section">
+                    <h2>Login</h2>
+                    <form action="#" method="POST">
+                        <input type="text" name="username" placeholder="Username" required>
+                        <input type="password" name="password" placeholder="Password" required>
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+</body>
+</html>
+
